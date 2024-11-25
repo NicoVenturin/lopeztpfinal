@@ -16,6 +16,7 @@ formulario.addEventListener('submit', (event) => {
     document.querySelector('#mensaje').innerHTML = '*Complete todos los datos';
     return;
   } else {
+    document.querySelector('#mensaje').className = 'text-success';
     document.querySelector('#mensaje').innerHTML = 'Usuario creado';
   }
 
