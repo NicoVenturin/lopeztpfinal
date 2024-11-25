@@ -25,7 +25,6 @@ const navbar = `
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="cuenta.html">Cuenta</a></li>
-                            <li><a class="dropdown-item" href="#">Pedidos</a></li>
                         </ul>
                     </li>
                     <button id="botonLogOut" class="btn btn-outline-danger" onclick="logOut()" type="submit">Salir</button>
