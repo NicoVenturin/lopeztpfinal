@@ -12,7 +12,12 @@ const port = process.env.MYSQL_ADDON_PORT || 3000;
 app.use(express.json())
 app.use(express.static('./public')) //Ejecuta directamente el front al correr el servidor
 app.use(cors())
-
+app.use(session({
+    secret: '4', 
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: false } 
+}));
 
 
 app.get('/productos', (req, res) => {
