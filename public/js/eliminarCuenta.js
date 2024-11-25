@@ -1,3 +1,4 @@
+const session = require('express-session');
 document.getElementById('formEliminarCuenta').addEventListener('submit', async (event) => {
     event.preventDefault();
 
