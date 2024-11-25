@@ -13,10 +13,11 @@ formulario.addEventListener('submit', (event) => {
   console.log("Datos enviados al servidor:", newDatos);  
 
   if (!newDatos.nombre || !newDatos.contraseña || newDatos.id_tip_usu === undefined) {
+    document.querySelector('#mensaje').style.color = "red";
     document.querySelector('#mensaje').innerHTML = '*Complete todos los datos';
     return;
   } else {
-    document.querySelector('#mensaje').className = 'text-success';
+    document.querySelector('#mensaje').style.color = "green";
     document.querySelector('#mensaje').innerHTML = 'Usuario creado';
   }
 
