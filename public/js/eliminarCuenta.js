@@ -23,7 +23,7 @@ document.getElementById('formEliminarCuenta').addEventListener('submit', async (
         const result = await response.json();
         console.log("Respuesta del servidor: ", result);
         document.getElementById('mensaje').innerHTML = `<div class="alert alert-success">${result.mensaje}</div>`;
-    
+        localStorage.removeItem('usuarioLogueado'); 
         window.location.href = '/index.html';
     } catch (error) {
         console.log("Error en la solicitud: ", error);
