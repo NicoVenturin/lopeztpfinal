@@ -14,7 +14,7 @@ formularioLogin.addEventListener('submit', (event) => {
 
   const login = async () => {
     try {
-      const response = await fetch('/login', {
+      const response = await fetch('/login.html', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
