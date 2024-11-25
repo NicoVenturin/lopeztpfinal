@@ -31,7 +31,7 @@ formularioLogin.addEventListener('submit', (event) => {
 
       loginUsuario(data);  
        if (data.id_tip_usu==1) {
-        window.location.href = '/productosadmin.html'; 
+        window.location.href = '/productosAdmin.html'; 
       } 
       else{
         window.location.href = '/index.html';  
