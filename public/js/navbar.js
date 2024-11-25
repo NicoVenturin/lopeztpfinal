@@ -24,7 +24,8 @@ const navbar = `
                             Usuario
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="cuenta.html">Cuenta</a></li>
+                            <li><a class="dropdown-item" href="modificarContra.html">Cambiar contraseña</a></li>
+                            <li><a class="dropdown-item" href="eliminarCuenta.html">Eliminar cuenta</a></li>
                         </ul>
                     </li>
                     <button id="botonLogOut" class="btn btn-outline-danger" onclick="logOut()" type="submit">Salir</button>
